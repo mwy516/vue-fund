@@ -1,0 +1,32 @@
+@charset "utf-8";
+//button 阴影
+@shawdow_deep:0 8px 30px -6px rgba(0,0,0,.6) !important;
+
+//button 渐变
+@gradient_bg:linear-gradient(-45deg,#23d2d7, #1ba4f8);
+
+//mask 遮罩
+.x-mark{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .2);
+}
+// 上下左右居中，需要给父级加positon: relative
+.x-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+}
+//button 尺寸
+.btn_default (@height:.44rem,@width:1.4rem) {
+    height:@height;
+    line-height: @height;
+    width:@width;
+    outline:none;
+    border: 0;
+    -webkit-tap-highlight-color:transparent;
+}

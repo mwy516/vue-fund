@@ -1,0 +1,285 @@
+@media screen and (min-width: 996px) and (max-width: 1200px) {
+    #app {
+        header {
+            .header {
+                padding: 0 .6rem;
+            }
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .features {
+            .center {
+                background: none;
+                .ceil{
+                    width:100%;
+                    background: none;
+                }
+            }
+        }
+        .product {
+            .product-content{
+                width:100%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    #app {
+        header {
+            .header {
+                padding: 0 1rem;
+            }
+        }
+        .container {
+            width: 1160px;
+            margin: 0 auto;
+        }
+        .product {
+            .product-content{
+                width:100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 995px) {
+    #app {
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+        header {
+            .close, .open {
+                display: block;
+            }
+            nav {
+                clear: both;
+                display: none;
+                float: none;
+                border-top: 1px solid #f0f0f0;
+                a {
+                    color: #000;
+                    display: block;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    margin: 10px 0;
+                }
+            }
+        }
+        .features {
+            .center {
+                background: none;
+                .ceil{
+                    width:100%;
+                    background: none;
+                }
+            }
+        }
+        .scenarios {
+            ul li {
+                img {
+                    width: 30%;
+                    margin:0 auto;
+                    display: block;
+                }
+                .content {
+                    width: 100%;
+                    min-height: 180px;
+                    text-align: center;
+                }
+            }
+            li:nth-child(odd), li:nth-child(even) {
+                margin: 0 5px 20px 5px;
+            }
+        }
+        .product{
+            display: none;
+        }
+    }
+
+}
+
+//720分辨率（大于480px，小于767px）
+@media screen and  (max-width: 768px) {
+    #app {
+        .about {
+            video {
+                margin-top: 20px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .features {
+            .right {
+                float: right;
+            }
+            .center .ceil {
+                background: none;
+            }
+        }
+        .product {
+            display: none;
+        }
+        .features {
+            .container{
+                display: block;
+            }
+            .left, .right, li {
+                width: 100%;
+                float: none;
+            }
+            .right li, .left li {
+                position: static;
+                margin-bottom: 20px;
+            }
+            .center, .ceil {
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                margin-bottom: 30px;
+            }
+        }
+        .home {
+            height: auto !important;
+            #canvas {
+                display: none;
+            }
+            .container {
+                width: 90%;
+                margin: 0 auto;
+                .con {
+                    padding-top: 50%;
+                    .button {
+                        margin:20px auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and  (max-width: 480px) {
+    #app {
+        h2 {
+            font-size: .3rem;
+            margin-bottom: 20px;
+        }
+        header {
+            background: #fff !important;
+            a {
+                &.logo {
+                    background: url("../assets/logo1.png") no-repeat center;
+                    -webkit-background-size: contain;
+                    background-size: contain;
+                    height: 0.7rem;
+                    width: 1.6rem;
+                    float: left;
+                }
+            }
+        }
+        .whitepaper {
+            .paper {
+                padding: 20px;
+                .left {
+                    width: 100%;
+                    margin: 0 auto 20px auto;
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                    }
+                    .content {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+                .down {
+                    position: relative;
+                    width: 60%;
+                    right: 0;
+                    margin: auto;
+                }
+            }
+        }
+        .roadMap .road {
+            height: 1000px;
+            .line {
+                left: 0;
+                height: 1000px;
+            }
+            li {
+                margin-bottom: 20px;
+            }
+            .col {
+                width: 100%;
+            }
+        }
+        .about {
+            video {
+                margin-top: 20px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .scenarios {
+            ul li {
+                width: 100%;
+                img {
+                    width: 40%;
+                    margin-left: 30%;
+                    display: block;
+                }
+                .content {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            li:nth-child(odd), li:nth-child(even) {
+                margin: 0 0 20px 0;
+            }
+        }
+        .download {
+            padding: 20px 10px;
+            .btn {
+                width: 80%;
+                margin-left: 10%;
+                .button {
+                    width: 100%;
+                }
+                .button {
+                    margin: 10px 0 20px 0;
+                }
+            }
+        }
+        .teams {
+            ul{
+                display: block;
+            }
+            li {
+                width: 80%;
+                margin-left: 10%;
+                margin-bottom: 20px;
+            }
+        }
+        .partner {
+            display: none;
+        }
+        .foot {
+            .btn {
+                a {
+                    display: block;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
+//440分辨率以下（小于479px）
+@media screen and (max-width: 320px) {
+
+}
+
